@@ -1,2 +1,0 @@
-# GrandTheftBlock
-Fun project
