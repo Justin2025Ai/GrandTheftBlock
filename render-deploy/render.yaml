@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: grandtheftblock
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: MAX_PLAYERS
+        value: 100
+      - key: INACTIVE_TIMEOUT
+        value: 300000
+    autoDeploy: true
+    rootDir: . 
